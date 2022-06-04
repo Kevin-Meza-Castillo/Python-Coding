@@ -1,12 +1,10 @@
 exams = int(input("Digite el numero de examenes: "))
-i = 0
 prom = 0
 addiction = 0
 
-while exams != i:
-    grade = int(input(f"Digite la nota del examen {i+1}: "))
+for n in range(0, exams, 1):
+    grade = int(input(f"Digite la nota del examen {n}: "))
     addiction += grade
-    i += 1
 prom = addiction / exams
 
 if prom >= 60:
